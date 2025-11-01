@@ -42,6 +42,11 @@ a{
     margin: 10px auto 0;
     padding: 0 10px;
 }
+@media screen and (min-width:1200px) {
+    .container{
+        padding: 0;
+    }
+}
 /* header start*/
 header .announcement-bar{
     border-radius: 6px;
@@ -825,10 +830,11 @@ header .announcement-bar{
 /* resources section start  */
 .resources{
     background: rgba(45, 57, 64, 0.08);
-    margin-top: 20px;
+    margin-block: 20px;
     border-radius: 15px;
     padding:46px 0 84px;
     display: flex;
+    margin-inline: 10px;
     justify-content: center;
 }
 .resources .heading h2{
@@ -860,6 +866,9 @@ header .announcement-bar{
 .resources-card .card-img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .resources-card .card-img span{
     position: absolute;
@@ -882,6 +891,10 @@ header .announcement-bar{
 .resources-card .card-text{
     padding: 30px;
 }
+.resources-card button{
+    background: none;
+    border: none;
+}
 .resources-card h3{
     color: #2D3940;
     font-family: Archivo;
@@ -899,7 +912,7 @@ header .announcement-bar{
     line-height: 130%;
     margin-block: 20px 26px;
 }
-.resources-card span{
+.resources-card .clickable{
     color: #2D3940;
     font-family: Archivo;
     font-size: 13px;
@@ -907,9 +920,10 @@ header .announcement-bar{
     font-weight: 600;
     line-height: 110%;
 }
-.resources-card span svg{
-    transform: translateY(-0.5px);
+.resources-card .clickable svg{
+    /* transform: translateY(-.5px); */
     margin-left: 10px;
+    vertical-align: middle;
 }
 @media screen and (min-width:767px) {
     .content-grid{
@@ -922,6 +936,7 @@ header .announcement-bar{
 }
 @media screen and (min-width:1024px) {
     .resources{
+        box-sizing: border-box;
         padding: 74px 41px 73px;
         margin-top: 35px;
     }
@@ -940,6 +955,19 @@ header .announcement-bar{
 @media screen and (min-width:1200px) {
     .resources-card .card-img {
         height: 210px;
+    }
+    .resources{
+        margin-inline: auto;
+    }
+    .resources-card .card-text h3:hover{
+        color: #0078D4;
+    }
+    .resources-card .card-text .clickable:hover{
+        color: #0078D4;
+        cursor: pointer;
+    }
+    .resources-card .card-text .clickable:hover rect{
+        fill: #0078D4;
     }
     
 }
@@ -1240,9 +1268,16 @@ line-height: 110%;
     .brands-details .subs-brands svg{
         width: 50%;
     }
+    .social-media .form button{
+        padding: 15px 30px;
+        width: fit-content;
+    }
+    .social-media .form button:hover{
+        background-color: #0078D4;
+        color: #FFF;
+    }
     .footer-list ul li a:hover{
         color: #1893F2;
-        
     }
     .subs-brand-logo p:hover{
         color: #1893F2;
