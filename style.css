@@ -24,6 +24,7 @@ svg{
     height: auto;
     max-width: 100%;
     vertical-align: middle;
+    cursor: pointer;
 }
 a{
     display: inline-block;
@@ -48,10 +49,21 @@ a{
     }
 }
 /* header start*/
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    padding:0 10px;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    margin-top: 0;
+    z-index: 999;
+}
 header .announcement-bar{
     border-radius: 6px;
     background: rgba(45, 57, 64, 0.16);
-    padding: 10px ;
+    padding:8.5px;
     display: flex;
     justify-content: center;
 }
@@ -64,16 +76,22 @@ header .announcement-bar{
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
+    text-align: center;
+    color: #2D3940;
 }
 .announcement-bar-text strong{
     font-weight: 600;
 }
-.announcement-bar-text strong:last-child{
+.announcement-bar-text a{
+    text-align: center;
+    color: #2D3940;
+    transition: .4s all;
     padding-left: 10px;
+    font-weight: 600;
     margin-left: 10px;
     border-left: 2px solid rgba(0, 0, 0, 0.50);
 }
-.announcement-bar-text strong:last-child svg{
+.announcement-bar-text a svg{
     margin-left: 10px;
 }
 /* nav-bar start */
@@ -238,6 +256,12 @@ header .announcement-bar{
     }
 }
 @media screen and (min-width:1200px){
+    .announcement-bar-text a:hover {
+        color: #0078D4;
+    }
+    .announcement-bar-text a:hover rect{
+        fill: #0078D4;
+    }
     .nav-list{
         flex: 0 68% ;
         padding: 0 ;
@@ -249,6 +273,9 @@ header .announcement-bar{
 /* nav-bar end */
 /* header end*/
 /* main start  */
+main{
+padding-top: 17.45xvh;
+}
 /* hero-banner start  */
 .hero-banner.container{
     margin-top: 0;
@@ -466,7 +493,7 @@ header .announcement-bar{
 .boards-range{
     margin-top: 50px;
 }
-.boards-range .boads-range-title{
+.boards-range .boards-range-title{
     color: #2D3940;
     text-align: center;
     font-family: Audiowide;
@@ -722,7 +749,15 @@ header .announcement-bar{
     .contacts-btn .btn.btn-blue{
         background-color: #0078D4;
     }
+    .contacts-btn .btn.btn-blue:hover{
+        color: #2D3940;
+        background-color: #FFF;
+    }
     .overlay .btn.btn-main{
+        color: #FFF;
+    }
+    .overlay-content .btn-white:hover{
+        background-color: #0078D4;
         color: #FFF;
     }
     .overlay .btn.btn-main:hover{
@@ -895,7 +930,7 @@ header .announcement-bar{
     background: none;
     border: none;
 }
-.resources-card h3{
+.resources-card a{
     color: #2D3940;
     font-family: Archivo;
     font-size: 15px;
@@ -959,7 +994,7 @@ header .announcement-bar{
     .resources{
         margin-inline: auto;
     }
-    .resources-card .card-text h3:hover{
+    .resources-card .card-text a:hover{
         color: #0078D4;
     }
     .resources-card .card-text .clickable:hover{
@@ -1094,6 +1129,7 @@ text-transform: uppercase;
 }
 .subs-brand-logo:last-child p{
     display: none;
+    border-left:none;
 }
 .footer-list{
     margin-bottom: 45px;
@@ -1142,6 +1178,9 @@ line-height: 110%;
     font-style: normal;
     font-weight: 600;
     line-height: 110%; 
+}
+.scroll-up a{
+    color: #FFF;
 }
 .scroll-up svg{
     margin-left: 7px;
@@ -1204,7 +1243,6 @@ line-height: 110%;
     }
     .social-link{
         grid-column:2 span;
-
     }
     .social-media .form {
         margin: 0;
@@ -1213,6 +1251,7 @@ line-height: 110%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 30px;
+    
     }
     .footer-list {
         margin: 0;
@@ -1256,6 +1295,7 @@ line-height: 110%;
         display: flex;
         justify-content: space-between;
         margin-block: 72px 60px;
+        z-index: 0;
     }
     .list-wrapper{
         text-align: start;
@@ -1282,6 +1322,13 @@ line-height: 110%;
     .subs-brand-logo p:hover{
         color: #1893F2;
         cursor: pointer;
+    }
+    .social-link .icon:hover{
+        background-color: #0078D4;
+        border-color: #0078D4;
+    }
+    .scroll-up{
+        z-index:1;
     }
 }
 
