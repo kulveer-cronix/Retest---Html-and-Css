@@ -43,7 +43,7 @@ a{
     margin: 10px auto 0;
     padding: 0 10px;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1420px) {
     .container{
         padding: 0;
     }
@@ -274,7 +274,7 @@ header .announcement-bar{
 /* header end*/
 /* main start  */
 main{
-padding-top: 17.45xvh;
+margin-top: 19.3vh;
 }
 /* hero-banner start  */
 .hero-banner.container{
@@ -351,10 +351,18 @@ padding-top: 17.45xvh;
     text-transform: uppercase;
     display: inline-block;
 }
+@media screen and (min-width:380px) {
+    main{
+        margin-top: 17.6vh;
+    }
+}
 @media screen and (min-width:767px) {
     .hero-banner .content-wrapper{
         background: url(./img/hero-banner-bg.jpg) lightgray 80% / cover no-repeat;
         height: 600px; 
+    }
+    main{
+        margin-top: 15.6vh;
     }
 }
 @media screen and (min-width:1200px) {
@@ -465,6 +473,9 @@ padding-top: 17.45xvh;
     }
 }
 @media screen and (min-width:1024px) {
+    main{
+        margin-top: 19.3vh;
+    }
     .services .sub-container{
         height: 400px;
         padding: 40px;
@@ -485,6 +496,9 @@ padding-top: 17.45xvh;
 @media screen and (min-width:1200px) {
     .services .content-wrapper h2{
         width: 85%;
+    }
+    main{
+        margin-top: 17.8vh;
     }
 }   
 
