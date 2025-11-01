@@ -274,7 +274,8 @@ header .announcement-bar{
 /* header end*/
 /* main start  */
 main{
-margin-top: 19.3vh;
+    position: relative;
+    transform: translateY(3.45%);
 }
 /* hero-banner start  */
 .hero-banner.container{
@@ -351,9 +352,9 @@ margin-top: 19.3vh;
     text-transform: uppercase;
     display: inline-block;
 }
-@media screen and (min-width:380px) {
+@media screen and (min-width:576px) {
     main{
-        margin-top: 17.6vh;
+        transform: translateY(3%);
     }
 }
 @media screen and (min-width:767px) {
@@ -362,13 +363,15 @@ margin-top: 19.3vh;
         height: 600px; 
     }
     main{
-        margin-top: 15.6vh;
+        transform: translateY(3%);
+    }
+}
+@media screen and (min-width:1024px) {
+    main{
+        transform: translateY(4.1%);
     }
 }
 @media screen and (min-width:1200px) {
-    main{
-        margin-top: 19.3vh;
-    }
     .hero-banner .content-wrapper{
         justify-content: end;
         justify-content: end;
@@ -398,12 +401,11 @@ margin-top: 19.3vh;
         color: var(--white-color--);
         background: #0078D4;
     }
-}
-@media screen and (min-width:1350px) {
     main{
-        margin-top: 15.6vh;
+        transform: translateY(3.7%);
     }
 }
+
 /* hero-banner end  */
 /* services-section start  */
 .services .sub-container{
