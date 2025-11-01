@@ -366,6 +366,9 @@ margin-top: 19.3vh;
     }
 }
 @media screen and (min-width:1200px) {
+    main{
+        margin-top: 19.3vh;
+    }
     .hero-banner .content-wrapper{
         justify-content: end;
         justify-content: end;
@@ -394,6 +397,11 @@ margin-top: 19.3vh;
     .content-wrapper .btn:hover{
         color: var(--white-color--);
         background: #0078D4;
+    }
+}
+@media screen and (min-width:1350px) {
+    main{
+        margin-top: 15.6vh;
     }
 }
 /* hero-banner end  */
@@ -473,9 +481,7 @@ margin-top: 19.3vh;
     }
 }
 @media screen and (min-width:1024px) {
-    main{
-        margin-top: 19.3vh;
-    }
+    
     .services .sub-container{
         height: 400px;
         padding: 40px;
@@ -496,9 +502,6 @@ margin-top: 19.3vh;
 @media screen and (min-width:1200px) {
     .services .content-wrapper h2{
         width: 85%;
-    }
-    main{
-        margin-top: 17.8vh;
     }
 }   
 
