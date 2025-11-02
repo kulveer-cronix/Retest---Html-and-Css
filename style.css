@@ -1282,9 +1282,7 @@ line-height: 110%;
         bottom: 40px;
         top: auto;
     }
-    .copy-right{
-        margin: auto auto;
-    }
+    
 }
 @media screen and (min-width:1024px) {
     .social-media .container{
@@ -1348,6 +1346,9 @@ line-height: 110%;
     }
     .scroll-up{
         z-index:1;
+    }
+    .copy-right{
+        margin: auto auto;
     }
 }
 
