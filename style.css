@@ -866,7 +866,7 @@ main{
 }
 @media screen and (min-width:1200px) {
     .about-us .content-wrapper{
-        gap: 40px;
+        gap: 60px;
         padding: 59px 40px;
     }
     .about-us-title{
