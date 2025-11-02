@@ -1122,7 +1122,7 @@ text-transform: uppercase;
     transform: translate(-50% , -50%);
 }
 .footer-container{
-    padding:0 30px;
+    padding:10px 30px 0;
     position: relative;
 }
 .brands-details .subs-brands{
